@@ -8,9 +8,11 @@
 			<region height="100.00%" id="region0" left="0.00%" top="0.00%" width="100.00%" zIndex="1">
 				<region height="50.00%" id="region1" left="47.54%" top="8.96%" width="50.00%" zIndex="2">
 				</region>
-				<region height="12.71%" id="region2" left="7.85%" top="80.62%" width="15.34%" zIndex="3">
+				<region bottom="9.38%" height="10.00%" id="region2" left="7.85%" right="80.33%" top="80.62%" width="12%" zIndex="3">
 				</region>
-				<region height="69.79%" id="region3" left="5.39%" top="6.88%" width="32.32%" zIndex="4">
+				<region height="49.00%" id="region3" left="2.46%" top="17.50%" width="40.00%" zIndex="4">
+				</region>
+				<region bottom="9.38%" height="10.00%" id="region4" left="22.25%" right="68.74%" top="80.62%" width="12.00%" zIndex="5">
 				</region>
 			</region>
 		</regionBase>
@@ -32,6 +34,8 @@
 			<descriptor id="descFoto6" region="region3">
 			</descriptor>
 			<descriptor id="descFondo" region="region0">
+			</descriptor>
+			<descriptor id="descBotonVerde" region="region4">
 			</descriptor>
 		</descriptorBase>
 	</head>
@@ -56,8 +60,6 @@
 		</media>
 		<media descriptor="desFoto1" id="foto1" src="foto1.jpg">
 		</media>
-		<port component="foto1" id="p2">
-		</port>
 		<link id="link0" xconnector="conn#onKeySelectionStartStop">
 			<bind component="foto2" role="start">
 			</bind>
@@ -180,5 +182,17 @@
 		</media>
 		<port component="fondo" id="p3">
 		</port>
+		<media descriptor="descBotonVerde" id="botonverdevideos" src="boton-verde-videos.png">
+		</media>
+		<port component="botonverdevideos" id="p4">
+		</port>
+		<link id="link12" xconnector="conn#onKeySelectionStart">
+			<bind component="botonrojofotos" role="onSelection">
+				<bindParam name="keyCode" value="RED">
+				</bindParam>
+			</bind>
+			<bind component="foto1" role="start">
+			</bind>
+		</link>
 	</body>
 </ncl>
