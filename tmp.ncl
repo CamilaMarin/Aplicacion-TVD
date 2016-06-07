@@ -8,11 +8,11 @@
 			<region height="100.00%" id="region0" left="0.00%" top="0.00%" width="100.00%" zIndex="1">
 				<region height="50.00%" id="region1" left="47.54%" top="8.96%" width="50.00%" zIndex="2">
 				</region>
-				<region bottom="9.38%" height="10.00%" id="region2" left="7.85%" right="80.33%" top="80.62%" width="12%" zIndex="3">
+				<region height="10.00%" id="region2" left="7.85%" top="80.62%" width="12.00%" zIndex="3">
 				</region>
 				<region height="49.00%" id="region3" left="2.46%" top="17.50%" width="40.00%" zIndex="4">
 				</region>
-				<region bottom="9.38%" height="10.00%" id="region4" left="22.25%" right="68.74%" top="80.62%" width="12.00%" zIndex="5">
+				<region height="10.00%" id="region4" left="22.25%" top="80.62%" width="12.00%" zIndex="5">
 				</region>
 			</region>
 		</regionBase>
@@ -36,6 +36,8 @@
 			<descriptor id="descFondo" region="region0">
 			</descriptor>
 			<descriptor id="descBotonVerde" region="region4">
+			</descriptor>
+			<descriptor id="descVideo1" region="region3">
 			</descriptor>
 		</descriptorBase>
 	</head>
@@ -186,14 +188,42 @@
 		</media>
 		<port component="botonverdevideos" id="p4">
 		</port>
-		<link id="link12" xconnector="conn#onKeySelectionStartStop">
+		<link id="link12" xconnector="conn#onKeySelectionStart">
 			<bind component="botonrojofotos" role="onSelection">
 				<bindParam name="keyCode" value="RED">
 				</bindParam>
 			</bind>
 			<bind component="foto1" role="start">
 			</bind>
+		</link>
+		<media descriptor="descVideo1" id="Wiz_Khalifa__See_You_Again_ft_Charlie_Puth_Official_Video_Furious_7_Soundtrackbajaryoutube" src="Wiz_Khalifa_-_See_You_Again_ft_Charlie_Puth_Official_Video_Furious_7_Soundtrack(bajaryoutube.com).mp4">
+		</media>
+		<link id="link13" xconnector="conn#onKeySelectionStart">
+			<bind component="botonverdevideos" role="onSelection">
+				<bindParam name="keyCode" value="GREEN">
+				</bindParam>
+			</bind>
+			<bind component="Wiz_Khalifa__See_You_Again_ft_Charlie_Puth_Official_Video_Furious_7_Soundtrackbajaryoutube" role="start">
+			</bind>
+		</link>
+		<link id="link14" xconnector="conn#onKeySelectionStartStop">
+			<bind component="botonrojofotos" role="onSelection">
+				<bindParam name="keyCode" value="GREEN">
+				</bindParam>
+			</bind>
+			<bind component="botonverdevideos" role="start">
+			</bind>
 			<bind component="botonrojofotos" role="stop">
+			</bind>
+		</link>
+		<link id="link15" xconnector="conn#onKeySelectionStartStop">
+			<bind component="botonverdevideos" role="onSelection">
+				<bindParam name="keyCode" value="RED">
+				</bindParam>
+			</bind>
+			<bind component="botonrojofotos" role="start">
+			</bind>
+			<bind component="botonverdevideos" role="stop">
 			</bind>
 		</link>
 	</body>
