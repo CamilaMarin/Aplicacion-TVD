@@ -206,5 +206,21 @@
 			<bind component="Wiz_Khalifa__See_You_Again_ft_Charlie_Puth_Official_Video_Furious_7_Soundtrackbajaryoutube" role="start">
 			</bind>
 		</link>
+		<link id="link14" xconnector="conn#onKeySelectionStop">
+			<bind component="botonrojofotos" role="onSelection">
+				<bindParam name="keyCode" value="RED">
+				</bindParam>
+			</bind>
+			<bind component="Wiz_Khalifa__See_You_Again_ft_Charlie_Puth_Official_Video_Furious_7_Soundtrackbajaryoutube" role="stop">
+			</bind>
+		</link>
+		<link id="link15" xconnector="conn#onKeySelectionStop">
+			<bind component="botonverdevideos" role="onSelection">
+				<bindParam name="keyCode" value="GREEN">
+				</bindParam>
+			</bind>
+			<bind component="foto1" role="stop">
+			</bind>
+		</link>
 	</body>
 </ncl>
