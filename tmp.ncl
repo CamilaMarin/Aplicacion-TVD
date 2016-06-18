@@ -6,13 +6,19 @@
 		</connectorBase>
 		<regionBase id="regionBase0">
 			<region height="100.00%" id="region0" left="0.00%" top="0.00%" width="100.00%" zIndex="1">
-				<region height="50.00%" id="region1" left="47.54%" top="8.96%" width="50.00%" zIndex="2">
+				<region height="60.00%" id="region1" left="1.76%" top="8.54%" width="60.00%" zIndex="2">
 				</region>
-				<region height="10.00%" id="region2" left="7.85%" top="80.62%" width="12.00%" zIndex="3">
+				<region height="6.00%" id="region2" left="12.06%" top="71.67%" width="8.00%" zIndex="3">
 				</region>
-				<region height="49.00%" id="region3" left="2.46%" top="17.50%" width="40.00%" zIndex="4">
+				<region height="48.54%" id="region3" left="65.11%" top="8.75%" width="32.90%" zIndex="4">
 				</region>
-				<region height="10.00%" id="region4" left="22.25%" top="80.62%" width="12.00%" zIndex="5">
+				<region height="6.00%" id="region4" left="20.84%" top="71.67%" width="8.00%" zIndex="5">
+				</region>
+				<region height="6.00%" id="region5" left="29.51%" top="71.67%" width="8.00%" zIndex="3">
+				</region>
+				<region height="6.00%" id="region6" left="38.29%" top="71.67%" width="8.00%" zIndex="3">
+				</region>
+				<region height="33.12%" id="region7" left="64.99%" top="60.21%" width="32.90%" zIndex="4">
 				</region>
 			</region>
 		</regionBase>
@@ -39,6 +45,42 @@
 			</descriptor>
 			<descriptor id="descVideo1" region="region3">
 			</descriptor>
+			<descriptor id="descFondo2" region="region0">
+			</descriptor>
+			<descriptor id="descfondo21" region="region0">
+			</descriptor>
+			<descriptor id="descFondo8" region="region0">
+			</descriptor>
+			<descriptor id="descFondo3" region="region0">
+			</descriptor>
+			<descriptor id="descFondo31" region="region0">
+			</descriptor>
+			<descriptor id="descFondo81" region="region0">
+			</descriptor>
+			<descriptor id="descFondo1" region="region0">
+			</descriptor>
+			<descriptor id="descFondo11" region="region0">
+			</descriptor>
+			<descriptor id="descFondo9" region="region0">
+			</descriptor>
+			<descriptor id="descFondo91" region="region0">
+			</descriptor>
+			<descriptor id="descFondo10" region="region0">
+			</descriptor>
+			<descriptor id="descFondo101" region="region0">
+			</descriptor>
+			<descriptor id="descFondo5" region="region0">
+			</descriptor>
+			<descriptor id="descFondo51" region="region0">
+			</descriptor>
+			<descriptor id="descFondover2" region="region0">
+			</descriptor>
+			<descriptor id="descBotonAmarillo" region="region5">
+			</descriptor>
+			<descriptor id="descBotonAzul" region="region6">
+			</descriptor>
+			<descriptor id="descTweets" region="region7">
+			</descriptor>
 		</descriptorBase>
 	</head>
 	<body id="myBodyID">
@@ -46,9 +88,7 @@
 		</media>
 		<port component="video" id="p0">
 		</port>
-		<media descriptor="descBotonRojo" id="botonrojofotos" src="boton-rojo-fotos.png">
-		</media>
-		<port component="botonrojofotos" id="p1">
+		<port component="bot_rojo" id="p1">
 		</port>
 		<media descriptor="desFoto2" id="foto2" src="foto2.jpg">
 		</media>
@@ -180,47 +220,61 @@
 			<bind component="foto1" role="stop">
 			</bind>
 		</link>
-		<media descriptor="descFondo" id="fondo" src="fondo.png">
-		</media>
-		<port component="fondo" id="p3">
-		</port>
-		<media descriptor="descBotonVerde" id="botonverdevideos" src="boton-verde-videos.png">
-		</media>
-		<port component="botonverdevideos" id="p4">
-		</port>
 		<link id="link12" xconnector="conn#onKeySelectionStart">
-			<bind component="botonrojofotos" role="onSelection">
+			<bind component="foto1" role="start">
+			</bind>
+			<bind component="bot_rojo" role="onSelection">
 				<bindParam name="keyCode" value="RED">
 				</bindParam>
-			</bind>
-			<bind component="foto1" role="start">
 			</bind>
 		</link>
 		<media descriptor="descVideo1" id="Wiz_Khalifa__See_You_Again_ft_Charlie_Puth_Official_Video_Furious_7_Soundtrackbajaryoutube" src="Wiz_Khalifa_-_See_You_Again_ft_Charlie_Puth_Official_Video_Furious_7_Soundtrack(bajaryoutube.com).mp4">
 		</media>
 		<link id="link13" xconnector="conn#onKeySelectionStart">
-			<bind component="botonverdevideos" role="onSelection">
+			<bind component="Wiz_Khalifa__See_You_Again_ft_Charlie_Puth_Official_Video_Furious_7_Soundtrackbajaryoutube" role="start">
+			</bind>
+			<bind component="bot_verde" role="onSelection">
 				<bindParam name="keyCode" value="GREEN">
 				</bindParam>
-			</bind>
-			<bind component="Wiz_Khalifa__See_You_Again_ft_Charlie_Puth_Official_Video_Furious_7_Soundtrackbajaryoutube" role="start">
 			</bind>
 		</link>
 		<link id="link14" xconnector="conn#onKeySelectionStop">
-			<bind component="botonrojofotos" role="onSelection">
+			<bind component="Wiz_Khalifa__See_You_Again_ft_Charlie_Puth_Official_Video_Furious_7_Soundtrackbajaryoutube" role="stop">
+			</bind>
+			<bind component="bot_rojo" role="onSelection">
 				<bindParam name="keyCode" value="RED">
 				</bindParam>
 			</bind>
-			<bind component="Wiz_Khalifa__See_You_Again_ft_Charlie_Puth_Official_Video_Furious_7_Soundtrackbajaryoutube" role="stop">
-			</bind>
 		</link>
 		<link id="link15" xconnector="conn#onKeySelectionStop">
-			<bind component="botonverdevideos" role="onSelection">
+			<bind component="foto1" role="stop">
+			</bind>
+			<bind component="bot_verde" role="onSelection">
 				<bindParam name="keyCode" value="GREEN">
 				</bindParam>
 			</bind>
-			<bind component="foto1" role="stop">
-			</bind>
 		</link>
+		<port component="Fondover2" id="p2">
+		</port>
+		<media descriptor="descFondover2" id="Fondover2" src="Fondover2.jpg">
+		</media>
+		<port component="bot_verde" id="p3">
+		</port>
+		<media descriptor="descBotonAzul" id="bot_azul" src="bot_azul.png">
+		</media>
+		<media descriptor="descBotonAmarillo" id="bot_amarillo" src="bot_amarillo.png">
+		</media>
+		<port component="bot_amarillo" id="p4">
+		</port>
+		<port component="bot_azul" id="p5">
+		</port>
+		<media descriptor="descBotonRojo" id="bot_rojo" src="bot_rojo.png">
+		</media>
+		<media descriptor="descBotonVerde" id="bot_verde" src="bot_verde.png">
+		</media>
+		<port component="tweetsblack" id="p6">
+		</port>
+		<media descriptor="descTweets" id="tweetsblack" src="tweets-black.png">
+		</media>
 	</body>
 </ncl>
