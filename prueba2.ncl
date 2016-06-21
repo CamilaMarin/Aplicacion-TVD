@@ -18,7 +18,7 @@
 				</region>
 				<region height="6.00%" id="region6" left="38.29%" top="71.67%" width="8.00%" zIndex="3">
 				</region>
-				<region height="33.12%" id="region7" left="64.99%" top="60.21%" width="32.90%" zIndex="4">
+				<region bottom="6.67%" height="84.79%" id="region7" left="65.11%" right="2.11%" top="8.75%" width="32.90%" zIndex="4">
 				</region>
 			</region>
 		</regionBase>
@@ -80,6 +80,10 @@
 			<descriptor id="descBotonAzul" region="region6">
 			</descriptor>
 			<descriptor id="descTweets" region="region7">
+			</descriptor>
+			<descriptor id="descCreditos" region="region7">
+			</descriptor>
+			<descriptor id="descAyuda" region="region7">
 			</descriptor>
 		</descriptorBase>
 	</head>
@@ -245,6 +249,8 @@
 				<bindParam name="keyCode" value="RED">
 				</bindParam>
 			</bind>
+			<bind component="ayuda" role="stop">
+			</bind>
 		</link>
 		<link id="link15" xconnector="conn#onKeySelectionStop">
 			<bind component="foto1" role="stop">
@@ -272,9 +278,93 @@
 		</media>
 		<media descriptor="descBotonVerde" id="bot_verde" src="bot_verde.png">
 		</media>
-		<port component="tweetsblack" id="p6">
-		</port>
-		<media descriptor="descTweets" id="tweetsblack" src="tweets-black.png">
+		<media descriptor="descCreditos" id="creditos" src="creditos.png">
 		</media>
+		<link id="link16" xconnector="conn#onKeySelectionStart">
+			<bind component="bot_amarillo" role="onSelection">
+				<bindParam name="keyCode" value="YELLOW">
+				</bindParam>
+			</bind>
+			<bind component="creditos" role="start">
+			</bind>
+		</link>
+		<link id="link17" xconnector="conn#onKeySelectionStop">
+			<bind component="bot_rojo" role="onSelection">
+				<bindParam name="keyCode" value="RED">
+				</bindParam>
+			</bind>
+			<bind component="creditos" role="stop">
+			</bind>
+		</link>
+		<link id="link18" xconnector="conn#onKeySelectionStop">
+			<bind component="bot_verde" role="onSelection">
+				<bindParam name="keyCode" value="GREEN">
+				</bindParam>
+			</bind>
+			<bind component="creditos" role="stop">
+			</bind>
+			<bind component="ayuda" role="stop">
+			</bind>
+		</link>
+		<link id="link19" xconnector="conn#onKeySelectionStop">
+			<bind component="bot_amarillo" role="onSelection">
+				<bindParam name="keyCode" value="YELLOW">
+				</bindParam>
+			</bind>
+			<bind component="Wiz_Khalifa__See_You_Again_ft_Charlie_Puth_Official_Video_Furious_7_Soundtrackbajaryoutube" role="stop">
+			</bind>
+		</link>
+		<link id="link20" xconnector="conn#onKeySelectionStop">
+			<bind component="bot_amarillo" role="onSelection">
+				<bindParam name="keyCode" value="YELLOW">
+				</bindParam>
+			</bind>
+			<bind component="foto1" role="stop">
+			</bind>
+		</link>
+		<media descriptor="descAyuda" id="ayuda" src="ayuda.png">
+		</media>
+		<port component="ayuda" id="p6">
+		</port>
+		<link id="link21" xconnector="conn#onKeySelectionStart">
+			<bind component="bot_azul" role="onSelection">
+				<bindParam name="keyCode" value="BLUE">
+				</bindParam>
+			</bind>
+			<bind component="ayuda" role="start">
+			</bind>
+		</link>
+		<link id="link22" xconnector="conn#onKeySelectionStop">
+			<bind component="bot_azul" role="onSelection">
+				<bindParam name="keyCode" value="BLUE">
+				</bindParam>
+			</bind>
+			<bind component="creditos" role="stop">
+			</bind>
+		</link>
+		<link id="link23" xconnector="conn#onKeySelectionStop">
+			<bind component="bot_azul" role="onSelection">
+				<bindParam name="keyCode" value="BLUE">
+				</bindParam>
+			</bind>
+			<bind component="Wiz_Khalifa__See_You_Again_ft_Charlie_Puth_Official_Video_Furious_7_Soundtrackbajaryoutube" role="stop">
+			</bind>
+		</link>
+		<link id="link24" xconnector="conn#onKeySelectionStop">
+			<bind component="bot_azul" role="onSelection">
+				<bindParam name="keyCode" value="BLUE">
+				</bindParam>
+			</bind>
+			<bind component="foto1" role="stop">
+			</bind>
+		</link>
+		<link id="link25" xconnector="conn#onKeySelectionStop">
+			<bind component="bot_amarillo" role="onSelection">
+				<bindParam name="keyCode" value="YELLOW">
+				</bindParam>
+			</bind>
+			<bind component="ayuda" role="stop">
+			</bind>
+		</link>
 	</body>
 </ncl>
