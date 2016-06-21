@@ -251,13 +251,7 @@
 			</bind>
 			<bind component="ayuda" role="stop">
 			</bind>
-		</link>
-		<link id="link15" xconnector="conn#onKeySelectionStop">
-			<bind component="foto1" role="stop">
-			</bind>
-			<bind component="bot_verde" role="onSelection">
-				<bindParam name="keyCode" value="GREEN">
-				</bindParam>
+			<bind component="creditos" role="stop">
 			</bind>
 		</link>
 		<port component="Fondover2" id="p2">
@@ -288,14 +282,6 @@
 			<bind component="creditos" role="start">
 			</bind>
 		</link>
-		<link id="link17" xconnector="conn#onKeySelectionStop">
-			<bind component="bot_rojo" role="onSelection">
-				<bindParam name="keyCode" value="RED">
-				</bindParam>
-			</bind>
-			<bind component="creditos" role="stop">
-			</bind>
-		</link>
 		<link id="link18" xconnector="conn#onKeySelectionStop">
 			<bind component="bot_verde" role="onSelection">
 				<bindParam name="keyCode" value="GREEN">
@@ -305,6 +291,18 @@
 			</bind>
 			<bind component="ayuda" role="stop">
 			</bind>
+			<bind component="foto1" role="stop">
+			</bind>
+			<bind component="foto2" role="stop">
+			</bind>
+			<bind component="foto3" role="stop">
+			</bind>
+			<bind component="foto4" role="stop">
+			</bind>
+			<bind component="foto5" role="stop">
+			</bind>
+			<bind component="foto6" role="stop">
+			</bind>
 		</link>
 		<link id="link19" xconnector="conn#onKeySelectionStop">
 			<bind component="bot_amarillo" role="onSelection">
@@ -313,13 +311,19 @@
 			</bind>
 			<bind component="Wiz_Khalifa__See_You_Again_ft_Charlie_Puth_Official_Video_Furious_7_Soundtrackbajaryoutube" role="stop">
 			</bind>
-		</link>
-		<link id="link20" xconnector="conn#onKeySelectionStop">
-			<bind component="bot_amarillo" role="onSelection">
-				<bindParam name="keyCode" value="YELLOW">
-				</bindParam>
+			<bind component="ayuda" role="stop">
 			</bind>
 			<bind component="foto1" role="stop">
+			</bind>
+			<bind component="foto2" role="stop">
+			</bind>
+			<bind component="foto3" role="stop">
+			</bind>
+			<bind component="foto4" role="stop">
+			</bind>
+			<bind component="foto5" role="stop">
+			</bind>
+			<bind component="foto6" role="stop">
 			</bind>
 		</link>
 		<media descriptor="descAyuda" id="ayuda" src="ayuda.png">
@@ -334,14 +338,6 @@
 			<bind component="ayuda" role="start">
 			</bind>
 		</link>
-		<link id="link22" xconnector="conn#onKeySelectionStop">
-			<bind component="bot_azul" role="onSelection">
-				<bindParam name="keyCode" value="BLUE">
-				</bindParam>
-			</bind>
-			<bind component="creditos" role="stop">
-			</bind>
-		</link>
 		<link id="link23" xconnector="conn#onKeySelectionStop">
 			<bind component="bot_azul" role="onSelection">
 				<bindParam name="keyCode" value="BLUE">
@@ -349,21 +345,19 @@
 			</bind>
 			<bind component="Wiz_Khalifa__See_You_Again_ft_Charlie_Puth_Official_Video_Furious_7_Soundtrackbajaryoutube" role="stop">
 			</bind>
-		</link>
-		<link id="link24" xconnector="conn#onKeySelectionStop">
-			<bind component="bot_azul" role="onSelection">
-				<bindParam name="keyCode" value="BLUE">
-				</bindParam>
+			<bind component="creditos" role="stop">
+			</bind>
+			<bind component="foto6" role="stop">
+			</bind>
+			<bind component="foto5" role="stop">
+			</bind>
+			<bind component="foto4" role="stop">
+			</bind>
+			<bind component="foto3" role="stop">
+			</bind>
+			<bind component="foto2" role="stop">
 			</bind>
 			<bind component="foto1" role="stop">
-			</bind>
-		</link>
-		<link id="link25" xconnector="conn#onKeySelectionStop">
-			<bind component="bot_amarillo" role="onSelection">
-				<bindParam name="keyCode" value="YELLOW">
-				</bindParam>
-			</bind>
-			<bind component="ayuda" role="stop">
 			</bind>
 		</link>
 	</body>
